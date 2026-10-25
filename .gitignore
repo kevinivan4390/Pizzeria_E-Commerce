@@ -1,0 +1,17 @@
+# Archivos del sistema y configuraciones de editores
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Credenciales y archivos de entorno
+.env
+.env.local
+
+# Archivos temporales o logs
+*.log
+*.tmp
+
+# Dependencias (si llegás a usar composer en el futuro)
+/vendor/

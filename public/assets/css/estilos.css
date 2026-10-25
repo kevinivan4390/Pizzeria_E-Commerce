@@ -1,0 +1,173 @@
+/* --- PALETA DE COLORES TOCCI'S TRATTORIA --- */
+:root {
+    --color-verde-oscuro: #012623;
+    --color-oliva-oscuro: #403501;
+    --color-oliva-medio: #736624;
+    --color-dorado-suave: #BFA249;
+    --color-dorado-principal: #F2AE30;
+    --color-fondo-crema: #faf9f5;
+}
+
+/* Base general */
+body {
+    background-color: var(--color-fondo-crema);
+    color: #2b2b2b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-verde-oscuro);
+}
+
+/* --- OVERRIDES DE BOOTSTRAP CON LA PALETA --- */
+
+/* Navbar */
+.navbar.bg-dark {
+    background-color: var(--color-verde-oscuro) !important;
+    border-bottom: 3px solid var(--color-dorado-principal);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--color-dorado-principal);
+}
+
+/* Botones con estilo propio (sobrescribe el azul predeterminado de Bootstrap) */
+.btn-primary, 
+.btn-success {
+    background-color: var(--color-dorado-principal) !important;
+    border-color: var(--color-dorado-principal) !important;
+    color: var(--color-verde-oscuro) !important;
+    font-weight: 700;
+}
+
+.btn-primary:hover, 
+.btn-success:hover {
+    background-color: var(--color-dorado-suave) !important;
+    border-color: var(--color-dorado-suave) !important;
+    color: var(--color-verde-oscuro) !important;
+}
+
+.btn-outline-warning {
+    border-color: var(--color-dorado-principal) !important;
+    color: var(--color-dorado-principal) !important;
+}
+
+.btn-outline-warning:hover {
+    background-color: var(--color-dorado-principal) !important;
+    color: var(--color-verde-oscuro) !important;
+}
+
+/* Footer */
+footer.bg-dark {
+    background-color: var(--color-verde-oscuro) !important;
+    border-top: 1px solid var(--color-oliva-medio);
+}
+
+/* --- SECCIÓN INDEX.PHP --- */
+.hero-banner {
+    background: linear-gradient(rgba(1, 38, 35, 0.75), rgba(1, 38, 35, 0.75)), url('../img/principal.png') center/cover no-repeat;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-hover {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(1, 38, 35, 0.15) !important;
+}
+
+/* --- SECCIÓN MENU.PHP --- */
+.producto-img,
+.producto-img-placeholder {
+    height: 200px;
+}
+
+.producto-img {
+    object-fit: contain;
+}
+
+.tarjeta-producto .card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.tarjeta-producto .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(1, 38, 35, 0.12) !important;
+}
+
+/* --- SECCIÓN NOSOTROS.PHP --- */
+.nosotros-img-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros-img-col img {
+    max-height: 380px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.nosotros-texto {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* --- SECCIÓN CONTACTO.PHP --- */
+/* Arreglo para que el mapa respeté los bordes redondeados del contenedor */
+.contenedor-contacto-info {
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.mapa-iframe {
+    border: 0;
+    width: 100%;
+    height: 280px;
+    display: block;
+}
+
+/* --- SECCIÓN RESEÑAS.PHP --- */
+.tarjeta-formulario-sticky {
+    top: 2rem;
+}
+
+/* --- SECCIÓN CARRITO.PHP --- */
+.col-cantidad {
+    width: 140px;
+}
+
+/* --- FIX HERO BANNER (Texto blanco) --- */
+.hero-banner {
+    background: linear-gradient(rgba(1, 38, 35, 0.85), rgba(1, 38, 35, 0.85)), url('../img/principal.png') center/cover no-repeat;
+    min-height: 420px;
+    color: #ffffff !important;
+}
+
+.hero-banner h1,
+.hero-banner p {
+    color: #ffffff !important;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* --- FIX BANNER INFERIOR (Cambia azul por verde pizzería) --- */
+.cta-banner {
+    background-color: var(--color-verde-oscuro) !important;
+    border-left: 5px solid var(--color-dorado-principal);
+    color: #ffffff !important;
+}
+
+.cta-banner h3,
+.cta-banner p {
+    color: #ffffff !important;
+}
