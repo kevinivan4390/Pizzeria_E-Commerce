@@ -349,8 +349,6 @@ Todas las peticiones pasan por el enrutador frontal en `public/index.php` median
 ## ✒️ Autor
 
 * **Desarrollador:** Kevin Gamboa
-* **Institución:** Instituto Belgrano (Rosario, Santa Fe, Argentina)
-* **Carrera:** Tecnicatura Superior en Desarrollo de Software
 
 ---
 
